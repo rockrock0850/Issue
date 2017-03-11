@@ -1,1 +1,8 @@
 Eclipse Issue Record
+
+  問題: 當我要載入Eclipse的EGit Plugin的時候, 雖然下載程序已經完成, 但還是無法匯入Git專案( 在匯入的介面裡面, 無法找到Git選單 ), 而且在
+Window->Show View底下也無法將Git Repository示圖介面打開( 開啟之後, 畫面視窗會產生錯誤訊息 ), 將EGit從灌也無法解決( 從灌清單上說明, egit.ui已經
+被載入過了, 所以無法重複下載 )
+  解決: 
+    1. 將eclipse->plugin->所有與EGit相關的jar檔刪除( 或轉移 )到備份資料夾, 重啟Eclipse在Help->Install New Software裡面重新安裝EGit套件並勾選更新
+    其他相關套件, 問題解決
