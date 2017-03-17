@@ -1,2 +1,20 @@
-#JQueryDataTable
+JQueryDataTable Issue Record
+
+---
+  問題: 在使用DataTable的時候, 若需要讓特定的欄位隱藏的解決辦法
+  解決: 
+    1. 可直接在畫table的時候在欄位加上客製class, 下display: none;將欄位隱藏起來
+      ex.
+        1. {bSearchable: false, sWidth: '16.6%', aTargets: [0], title: '', data: 'roleId', className: 'roleId hide'}
+        
+        2. .hide{
+              display: none;
+            }
+
+---
+  問題: 在使用DataTable的時候, 若開啟了Filter功能而需要讓特定的欄位不被搜尋到的解決辦法
+  解決: 
+    1. 可直接在畫table的時候在欄位加上bSearchable: false參數即可
+
+---
 
